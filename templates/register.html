@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='designing.css')}}">
+
+</head>
+<body>
+    <div class="form-container">
+        <h2>Register</h2>
+
+        <form method="POST">
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <input type="password" name="password" placeholder="Enter Password" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p>Already user? <a href="/login">Login</a></p>
+    </div>
+    <footer>
+    <div class="footer-links">
+     <span>Conditions of Use</span>  
+         <span>Privacy Notice</span>  
+         <span>Help</span> 
+         </div>
+          <br>
+<div class="footer-copy">
+         © 1996–2026, Amazon.com and its affiliates
+</div>
+</footer>
+
+</body>
+</html>

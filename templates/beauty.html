@@ -1,0 +1,83 @@
+
+<body style="background-color: bisque;">
+    <h2>Beauty Products</h2>
+
+<div style="display:flex; gap:20px;">
+{% for p in products %}
+    <div style="border:1px solid #ccc; padding:10px; background-color: white;">
+        <img src="{{ url_for('static', filename='images/' + p[3]) }}" width="120">
+        <h3>{{ p[1] }}</h3>
+        <p>₹{{ p[2] }}</p>
+        <p>{{ p[4] }}</p>
+    </div>
+{% endfor %}
+</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beauty Products</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f5f5f5;
+        }
+
+        h2 {
+            margin-left: 20px;
+        }
+
+        .product-row {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            min-width: 200px;
+            background: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .product img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+        .product:hover {
+            box-shadow: 0px 0px 10px gray;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Customers who viewed this item also viewed</h2>
+
+<div class="product-row">
+
+{% for p in products %}
+    <div class="product">
+        <img src="{{ url_for('static', filename='images/' + p[3]) }}">
+        <h4>{{ p[1] }}</h4>
+        <p class="price">₹{{ p[2] }}</p>
+        <p>{{ p[4] }}</p>
+    </div>
+{% endfor %}
+
+</div>
+</body>
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* Center form */
+body {
+    font-family: Arial;
+    background-color: white;
+}
+
+/* Form box */
+.form-container {
+    width: 350px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Heading */
+.form-container h2 {
+    text-align: center;
+}
+
+/* Input fields */
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button */
+.form-container button {
+    width: 106%;
+    padding: 10px;
+    background-color: #ffd814;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.form-container button:hover {
+    background-color: #f7ca00;
+}
+
+/* Links */
+.form-container p {
+    text-align: center;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+
+}
+.footer-links {
+    margin-bottom: -10px;
+}
+.footer-links span{
+    margin: 10px;
+    font-size: 14px;
+}
+.footer-copy{
+    font-size: 14px;
+    
+}

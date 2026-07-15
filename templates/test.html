@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='styling.css')}}">
+
+</head>
+<body>
+    <header>
+        <div class="navbar" >
+        <div class="nav-logo border">
+            <div class="logo"
+style="background-image: url('{{ url_for('static', filename='images/amazon_logo.png') }}');">
+</div>
+        </div>
+        <div class="nav-add border">
+            <p class="add">Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="add2">India</p>
+            </div>
+        </div>
+        <div class="nav-search">
+            <select class="select">
+                <option>All</option>
+            </select>
+            <input placeholder="Search Amazon" class="search">
+            <div class="Search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="nav-signin border">
+            <button onclick="window.location.href='/login'">Sign In</button>
+            <p><span>Hello, sign in</span></p>
+            <p class="nav-2">Account & List</p>
+        </div>
+
+
+                <div class="nav-return border">
+            <p><span>Returns</span></p>
+            <p class="nav-2">Orders</p>
+        </div>
+
+        <div class="cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+        </div>
+    </header>
+
+    <div class="pannel">
+    <div class="pannel-all">
+        <i class="fa-solid fa-bars"></i>
+        All
+    </div>
+
+    <div class="pannel-options">
+        <p>Today's Deals</p>
+        <p>Customer Service</p>
+        <p>Registration</p>
+        <p>Gift Cards</p>
+        <p>Sell</p>
+    </div>
+
+    <div class="pannel-deals">
+        shop Deals in Electronics
+    </div>
+    </div>
+
+    <div class="main"style="background-image: url('{{ url_for('static', filename='images/amazon.jpg') }}');"></div>>
+        <div class="msg">
+            <p> You are on amazon.com. You can also shop on Amazon India for millions of products with    fast local delivery.</p> <a>Click here to go to Amazon.in</a>
+        </div>
+    </div>
+
+    <div class="shop">
+
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>Health & Personal Care</h2>
+            <div class="box1-img" style="background-image: url('{{url_for('static',filename='images/box1.jpg')}}');"></div>
+            <p>See more</p>
+            </div>           
+        </div>
+        <div class="box2 box">
+            <div class="box2-content">
+                <h2>Grocery Items</h2>
+            <div class="box2-img" style="background-image: url('{{url_for('static',filename='images/box2.JPEG')}}');"></div>
+            <p>See more</p>
+            </div>         
+        </div>
+
+        <div class="box3 box">
+            <div class="box3-content">
+                <h2>Styling</h2>
+            <div class="box3-img" style="background-image: url('{{url_for('static',filename='images/box3.jpg')}}');"></div>
+            <p>See more</p>
+            </div>         
+        </div>
+
+        <div class="box4 box">
+            <div class="box4-content">
+                <h2>Jwellery </h2>
+            <div class="box4-img" style="background-image: url('{{url_for('static',filename='images/box4.jpg')}}');"></div>
+            <p>See more</p>
+            </div>         
+        </div>
+
+
+
+        <div class="box5 box">
+            <div class="box5-content">
+                <h2>Electronics and Devices</h2>
+            <div class="box5-img" style="background-image: url('{{url_for('static',filename='images/box5.jpg')}}');"></div>
+            <p>See more</p>
+            </div>           
+        </div>
+        <div class="box6 box">
+            <div class="box6-content">
+                <h2>Beauty and Makeup   </h2>
+            <div class="box6-img" style="background-image: url('{{url_for('static',filename='images/box6.jpg')}}');"></div>
+<a href="/beauty">See More</a> 
+</a>
+            </div>         
+        </div>
+
+        <div class="box7 box">
+            <div class="box7-content">
+                <h2>Toys and Teddys</h2>
+            <div class="box7-img" style="background-image: url('{{url_for('static',filename='images/box7.jpg')}}');"></div>
+            <p>See more</p>
+            </div>         
+        </div>
+
+        <div class="box8 box">
+            <div class="box8-content">
+                <h2>Kitchen Essentials</h2>
+            <div class="box8-img" style="background-image: url('{{url_for('static',filename='images/box8.WEBP')}}');"></div>
+            <p>See more</p>
+            </div>         
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="foot-pannel1">
+            Back to Top
+        </div>
+        <div class="foot-pannel2">
+            <ul>
+                <P>Get to Know Us</P>
+                <a>About Amazon</a>
+                <a>Careers</a>
+                <a>Press Releases</a>
+                <a>Science</a>
+            </ul>
+
+            <ul>
+                <P>Connect with Us</P>
+                <a>Facebook</a>
+                <a>Twitter</a>
+                <a>Instagram</a>
+            </ul>
+
+            <ul>
+                <P>Make Money with Us</P>
+                <a>Sell on Amazon</a>
+                <a>Sell under Amazon Accelerator</a>
+                <a>Protect and Build Your Brand</a>
+                <a>Amazon Global Selling</a>
+                <a>Supply to Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Fulfilment by Amazon</a>
+                <a>Advertise Your Products</a>
+                <a>Amazon Pay on Merchants</a>
+            </ul>
+
+            <ul>
+                <P>Let Us Help You</P>
+                <a>Your Account</a>
+                <a>Returns Centre</a>
+                <a>Recalls and Product Safety Alerts</a>
+                <a>100% Purchase Protection</a>
+                <a>Amazon App Download</a>
+                <a>Help</a>
+            </ul>
+
+
+
+        </div>
+
+        <div class="foot-pannel3">
+            <div class="logo2"></div>
+        </div>
+
+        <div class="foot-pannel4">
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your ads Privacy Choices</a>
+            </div>
+        
+        <div class="copyright">
+        © 1996-2026, Amazon.com, Inc. or its affiliates
+        </div>
+        </div>
+
+    </footer>
+
+<!-- <div id="content">
+    <div class="contentbox" style="background-color: rgb(211, 163, 255);"> offer starts now </div>
+    <div class="contentbox" style="background-color: rgb(189, 130, 245);">get your wishlists</div>
+    <div class="contentbox" style="background-color: rgb(174, 89, 253);">enjoy the big data sell</div>
+</div> -->
+
+<!-- <div class="item">
+    <h2>Revamp your home in style</h2>
+</div>
+<div class="product"></div>
+<div>Explore all</div>
+
+<br>
+<footer>abc@gmail.com
+    made with &hearts; by Amazon<br>
+</footer> -->
+
+</body>
+</html>
